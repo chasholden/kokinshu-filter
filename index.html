@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Kokinshu Filter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+  <link href="kokinshu.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <section id="controls">
+    <fieldset id="filter-group">
+      <label for="filter1">Season</label>
+      <select id='filter1'>
+    <option value='all'>All</option>
+      <option value="spring">Spring</option>
+      <option value="summer">Summer</option>
+      <option value="fall">Fall</option>
+      <option value="winter">Winter</option>
+    </select>
+      <label for="filter2">Mood/Occasion</label>
+      <select id='filter2'>
+      <option value='all'>All</option>
+      <option value='felicitation'>Felicitation</option>
+      <option value='parting'>Parting</option>
+      <option value='travel'>Travel</option>
+      <option value='love'>Love</option>
+      <option value='grief'>Grief</option>
+      <option value='longing'>Longing</option>
+      <option value="aging">Aging</option>
+      <option value="melancholy">Melancholy</option>
+    </select>
+      <label for="filter3">Flora/Fauna</label>
+      <select id='filter3' multiple>
+      <option value='mountain-thrush'>Mountain Thrush</option>
+      <option value='mockingbird'>Mockingbird</option>
+      <option value='cherry'>Cherry</option>
+      <option value='plum'>Plum</option>
+      <option value='chrysanthemum'>Chrysanthemum</option>
+    </select>
+      <label for="filter4">Murakatoba</label>
+      <select id='filter4'>
+      <option value='all'>All</option>
+      <option value='of-soft-grasses'>'of soft grasses'</option>
+    </select>
+      <button id="search-toggle">Try a custom search</button>
+    </fieldset>
+    <fieldset id="search-group">
+      <button id="filter-toggle">Back to filters</button>
+      <label for="main-search">Search poem text</label>
+      <input id="main-search" placeholder="search">
+      <span id="search-count"></span>
+    </fieldset>
+  </section>
+  <button id="slide-toggle" class="closed">Show/hide controls</button>
+  <section id="results">
+    <ul id="poem-list" class="controls-closed">
+      <li class="spring mountain-thrush plum longing snow">
+        <div class="card">
+          <div class="main-content">
+            <p>he cries on and on<br />the mountain thrush perched on<br />branches of the plum<br />long-awaited spring has come<br />still the snows of winter fall</p>
+          </div>
+          <div class="more-content">
+            <p>By: Anonymous</p>
+            <p><strong>Original poem in romaji:</strong><br /> ume ga eda ni<br />kiiru uguisu<br />hara kakete<br />nakedomo imada<br />yuki wa furitsutsu</p>
+          </div>
+          <div class="expand"><span>More</span></div>
+        </div>
+      </li>
+      <li class="spring longing snow">
+        <div class="card">
+          <div class="main-content">
+            <p>so longlingly have I<br />awaited the fresh flowers<br />of spring that they have<br />dyed my soul and I see snow<br />as clustered blossoms on branches</p>
+          </div>
+          <div class="more-content">
+            <p>By: Anonymous</p>
+            <p><strong>Original poem in romaji:</strong><br /> kokorozashi
+              <br />fukaku someteshi<br />orikereba<br />kieaenu yuki no<br />hana to miyuran</p>
+          </div>
+          <div class="expand"><span>More</span></div>
+        </div>
+      </li>
+      <li class="spring aging snow melancholy">
+        <div class="card">
+          <div class="main-content">
+            <p>though I bask in the<br />comforting warmth of spring light<br />how melancholy<br />to think that my hair now<br />wears a crown of winter snow</p>
+          </div>
+          <div class="more-content">
+            <p>By: Funya no Yasuhide</p>
+            <p><strong>Original poem in romaji:</strong><br />
+            haru no hi no<br />hikari ni ataru<br />ware naredo<br />kashira no yuki to<br />naru zo wabishiki</p>
+            <p><strong>Notes:</strong><br />
+            Ordered by the Nijo Consort (who was then known as Lady of the Bedchamber) to compose a poem about the snow falling on his head in the sunshine, as he stood in audience before her on the third of January.</p>
+          </div>
+          <div class="expand"><span>More</span></div>
+        </div>
+      </li>
+      <li class="spring love grass of-soft-grasses">
+        <div class="card">
+          <div class="main-content">
+            <p>not today--do not<br />burn the Kasuga Meadows<br />now--for here amidst<br />the soft spring-green grasses hide<br />my gentle sweetheart and I</p>
+          </div>
+          <div class="more-content">
+            <p>By: Anonymous</p>
+            <p><strong>Original poem in romaji:</strong><br /> kasuga no wa<br />kyo wa na yaki so<br />wakakusa no<br />tsuma mo komoreri<br />ware mo komoreri</p>
+          </div>
+          <div class="expand"><span>More</span></div>
+        </div>
+      </li>
+      <li class="spring aging melancholy">
+        <div class="card">
+          <div class="main-content">
+            <p>the spring caroling<br />of myriad chriping birds<br />awakens each year<br />all is rejuvenated<br />while I alone grow older</p>
+          </div>
+          <div class="more-content">
+            <p>By: Anonymous</p>
+            <p><strong>Original poem in romaji:</strong><br /> momochidori
+              <br />saezuru haru wa<br />momo goto ni<br />aratamaredomo<br />ware zo furiyuku</p>
+          </div>
+          <div class="expand"><span>More</span></div>
+        </div>
+      </li>
+      <li class="spring plum love longing">
+        <div class="card">
+          <div class="main-content">
+            <p>never again will<br />I plant a plum tree near my<br />house for I mistook<br />the scent for the perfumed robes<br />of the one for whom I wait</p>
+          </div>
+          <div class="more-content">
+            <p>By: Anonymous</p>
+            <p><strong>Original poem in romaji:</strong><br /> yado chikaku<br />ume no hana ueji<br />ajikinaku<br />natsu hito no ka ni<br />ayamatarekeri</p>
+          </div>
+          <div class="expand"><span>More</span></div>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" type="text/javascript"></script>
+  <script src="kokinshu.js" type="text/javascript"></script>
+</body>
+</html>
