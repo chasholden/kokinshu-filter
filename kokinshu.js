@@ -75,9 +75,16 @@ $(document).ready(function() {
   
   //------------------click events-------------------------------------
   $("#slide-toggle").click(function() {
+    var expand = $(this);
+    var content = expand.prev();
     $("#slide-toggle").toggleClass("open");
     $("#poem-list").toggleClass("controls-open");
-    $("#controls").slideToggle(50);
+    $("#controls").slideToggle(50, function() {
+      expand.text(function() {
+        return content.is(":visible") ? "Hide controls" : "Show controls";
+      });
+    $("html, body").animate({ scrollTop: 0 }, 500);
+      });
   });
 
   $("#search-toggle").click(function() {
@@ -99,12 +106,12 @@ $(document).ready(function() {
  
 
   $(".expand").click(function() {
-    $expand = $(this);
-    $content = $expand.prev();
+    var expand = $(this);
+    var content = expand.prev();
     
-    $content.slideToggle(500, function() {
-      $expand.text(function() {
-        return $content.is(":visible") ? "Less" : "More";
+    content.slideToggle(500, function() {
+      expand.text(function() {
+        return content.is(":visible") ? "Less" : "More";
       });
     });
 

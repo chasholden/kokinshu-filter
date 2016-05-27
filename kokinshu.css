@@ -12,7 +12,7 @@ body {
   color: white;
   width: 100%;
   top: 0;
-  background: #333333;
+  background: #285728;
 }
 
 fieldset {
@@ -26,6 +26,7 @@ fieldset {
 
 label {
   font-size: 1.3rem;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   display:block;
 }
 
@@ -48,15 +49,16 @@ label {
   border: none;
   padding-top: .5rem;
   padding-bottom: .5rem;
-  background: #333333;
-  background: -moz-radial-gradient(center, ellipse cover, #333333 0%, #333333 60%, #000000 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #333333), color-stop(60%, #333333), color-stop(100%, #000000));
-  background: -webkit-radial-gradient(center, ellipse cover, #333333 0%, #333333 60%, #000000 100%);
-  background: -o-radial-gradient(center, ellipse cover, #333333 0%, #333333 60%, #000000 100%);
-  background: -ms-radial-gradient(center, ellipse cover, #333333 0%, #333333 60%, #000000 100%);
-  background: radial-gradient(ellipse at center, #333333 0%, #333333 60%, #000000 100%);
+  background: #114511;
+  background: -moz-radial-gradient(center, ellipse cover, #114511 0%, #114511 60%, #114511 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #114511), color-stop(60%, #114511), color-stop(100%, #000000));
+  background: -webkit-radial-gradient(center, ellipse cover, #114511 0%, #114511 60%, #000000 100%);
+  background: -o-radial-gradient(center, ellipse cover, #114511 0%, #114511 60%, #000000 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #114511 0%, #114511 60%, #000000 100%);
+  background: radial-gradient(ellipse at center, #114511 0%, #114511 60%, #000000 100%);
   background-size: 5px 5px;
   z-index: 1;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 .closed {
@@ -113,7 +115,7 @@ li {
 }
 
 p {
-  font-family: "Pontano Sans";
+  font-family: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
   font-size: 1.2rem;
   text-align: left;
 }
@@ -135,9 +137,17 @@ p {
   background: white;
 }
 .expand{
-  background-color: #BEBEBE;
+  padding:.2rem;
+  border: 3px solid #708f70;
   cursor: pointer;
+  width:40%;
+  margin-left:auto;
+  margin-right:auto;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: .9rem;
+  background-color: #e5e5e5;
 }
+
 .card .more-content{
   display:none;
 }
