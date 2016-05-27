@@ -24,6 +24,10 @@ fieldset {
   display: none;
 }
 
+select, input{
+  font-size: 16px;
+}
+
 label {
   font-size: 1.3rem;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -32,10 +36,12 @@ label {
 
 #search-toggle {
   margin-top:.5rem;
+  font-size: 16px;
 }
 
 #filter-toggle {
   margin-bottom:.5rem;
+  font-size: 16px;
 }
 
 #slide-toggle {
@@ -116,7 +122,7 @@ li {
 
 p {
   font-family: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-align: left;
 }
 .more-content {
