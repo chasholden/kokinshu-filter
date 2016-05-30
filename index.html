@@ -9,6 +9,8 @@
 <body>
   <section id="controls">
     <fieldset id="filter-group">
+      <div class="section group">
+        <div class="col span_1_of_3">
       <label for="filter1">Season</label>
       <select id='filter1'>
     <option value='all'>All</option>
@@ -29,6 +31,8 @@
       <option value="aging">Aging</option>
       <option value="melancholy">Melancholy</option>
     </select>
+        </div>
+        <div class="col span_1_of_3">
       <label for="filter3">Symbols from Nature</label>
       <select id='filter3' multiple>
       <option value='mountain-thrush'>Mountain Thrush</option>
@@ -39,11 +43,20 @@
       <option value='snow'>Snow</option>
       <option value='rain'>Rain</option>
     </select>
+        </div>
+        <div class="col span_1_of_3">
       <label for="filter4">Murakatoba</label>
       <select id='filter4'>
       <option value='all'>All</option>
       <option value='of-soft-grasses'>'of soft grasses'</option>
     </select>
+      <label for="filter5">Place</label>
+      <select id='filter5'>
+      <option value='all'>All</option>
+      <option value='kasuga-meadows'>Kasuga Meadows</option>
+      </select>
+        </div>
+      </div>
       <button id="search-toggle">Try a custom search</button>
     </fieldset>
     <fieldset id="search-group">
@@ -55,7 +68,8 @@
   </section>
   <button id="slide-toggle" class="closed">Show controls</button>
   <section id="results">
-    <ul id="poem-list" class="controls-closed">
+    <h1 class="controls-closed">Kokinshu Filter</h1>
+    <ul id="poem-list">
       <li class="spring mountain-thrush plum longing snow">
         <div class="card">
           <div class="main-content">
@@ -96,7 +110,7 @@
           <button class="expand"><span>More</span></button>
         </div>
       </li>
-      <li class="spring love grass of-soft-grasses">
+      <li class="spring love grass of-soft-grasses kasuga-meadows">
         <div class="card">
           <div class="main-content">
             <p>not today--do not<br />burn the Kasuga Meadows<br />now--for here amidst<br />the soft spring-green grasses hide<br />my gentle sweetheart and I</p>

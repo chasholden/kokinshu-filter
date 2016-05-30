@@ -15,6 +15,42 @@ body {
   background: #285728;
 }
 
+h1 {
+  font-family: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+/* responsive grid from http://www.responsivegridsystem.com/ */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+
+@media only screen and (max-width: 950px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+
+/* ------------end responsive grid----------------------- */
+
 fieldset {
   border: none;
   padding: 0;
@@ -32,6 +68,7 @@ label {
   font-size: 1.3rem;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   display:block;
+  padding-bottom: .2rem;
 }
 
 #search-toggle {
@@ -103,7 +140,7 @@ ul {
 }
 
 .controls-closed {
-  padding-top: 4rem;
+  padding-top: 3rem;
 }
 
 .controls-open {
