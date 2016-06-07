@@ -17,6 +17,7 @@ $(document).ready(function() {
 
     if (filterVal == "all" && filterVal2 == "all" && filterVal3 === null && filterVal4 == "all" && filterVal5 == "all") {
       $("li").fadeIn("fast");
+      $('#filter-count').hide();
     } else {
       if (filterVal != "all") {
         filterSelector = "." + filterVal;
@@ -40,6 +41,9 @@ $(document).ready(function() {
 
       $("li").hide();
       $(filterSelector + filter2Selector + filter3Selector + filter4Selector + filter5Selector).fadeIn("fast");
+      var filterCount = $('li:visible').length;
+      $('#filter-count').fadeIn("fast");
+      $('#filter-count').text("Number of poems = " + filterCount); 
     }
   }
 

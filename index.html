@@ -16,7 +16,7 @@
     <option value='all'>All</option>
       <option value="spring">Spring</option>
       <option value="summer">Summer</option>
-      <option value="fall">Fall</option>
+      <option value="autumn">Autumn</option>
       <option value="winter">Winter</option>
     </select>
       <label for="filter2">Mood/Occasion</label>
@@ -37,9 +37,12 @@
       <select id='filter3' multiple>
       <option value='mountain-thrush'>Mountain Thrush</option>
       <option value='mockingbird'>Mockingbird</option>
+      <option value='nightingale'>Nightingale</option>
+      <option value='cicada'>Cicada</option>
       <option value='cherry'>Cherry</option>
       <option value='plum'>Plum</option>
       <option value='chrysanthemum'>Chrysanthemum</option>
+      <option value='arrowroot'>Arrowroot</option>
       <option value='snow'>Snow</option>
       <option value='rain'>Rain</option>
     </select>
@@ -49,14 +52,20 @@
       <select id='filter4'>
       <option value='all'>All</option>
       <option value='of-soft-grasses'>'of soft grasses'</option>
+      <option value='like-cicada-shell'>'like a cicada shell'</option>
+      <option value='mighty'>'mighty'</option>
     </select>
       <label for="filter5">Place</label>
       <select id='filter5'>
       <option value='all'>All</option>
       <option value='kasuga-meadows'>Kasuga Meadows</option>
+      <option value='mount-tokiwa'>Mount Tokiwa</option>
+      <option value='mount-yoshino'>Mount Yoshino</option>
+      <option value='osaka'>Osaka</option>
       </select>
         </div>
       </div>
+      <span id="filter-count"></span>
       <button id="search-toggle">Try a custom search</button>
     </fieldset>
     <fieldset id="search-group">
@@ -77,7 +86,7 @@
           </div>
           <div class="more-content">
             <p><em>Anonymous</em></p>
-            <p><strong>Original romaji:</strong><br /> ume ga eda ni<br />kiiru uguisu<br />hara kakete<br />nakedomo imada<br />yuki wa furitsutsu</p>
+            <p><strong>Romaji:</strong><br /> ume ga eda ni<br />kiiru uguisu<br />hara kakete<br />nakedomo imada<br />yuki wa furitsutsu</p>
           </div>
           <button class="expand"><span>More</span></button>
         </div>
@@ -89,7 +98,7 @@
           </div>
           <div class="more-content">
             <p><em>Anonymous</em></p>
-            <p><strong>Original romaji:</strong><br /> kokorozashi
+            <p><strong>Romaji:</strong><br /> kokorozashi
               <br />fukaku someteshi<br />orikereba<br />kieaenu yuki no<br />hana to miyuran</p>
           </div>
           <button class="expand"><span>More</span></button>
@@ -102,7 +111,7 @@
           </div>
           <div class="more-content">
             <p><em>Funya no Yasuhide</em></p>
-            <p><strong>Original romaji:</strong><br />
+            <p><strong>Romaji:</strong><br />
             haru no hi no<br />hikari ni ataru<br />ware naredo<br />kashira no yuki to<br />naru zo wabishiki</p>
             <p><strong>Notes:</strong><br />
             Ordered by the Nijo Consort (who was then known as Lady of the Bedchamber) to compose a poem about the snow falling on his head in the sunshine, as he stood in audience before her on the third of January.</p>
@@ -117,7 +126,7 @@
           </div>
           <div class="more-content">
             <p><em>Anonymous</em></p>
-            <p><strong>Original romaji:</strong><br /> kasuga no wa<br />kyo wa na yaki so<br />wakakusa no<br />tsuma mo komoreri<br />ware mo komoreri</p>
+            <p><strong>Romaji:</strong><br /> kasuga no wa<br />kyo wa na yaki so<br />wakakusa no<br />tsuma mo komoreri<br />ware mo komoreri</p>
           </div>
           <button class="expand"><span>More</span></button>
         </div>
@@ -129,7 +138,7 @@
           </div>
           <div class="more-content">
             <p><em>Anonymous</em></p>
-            <p><strong>Original romaji:</strong><br /> momochidori
+            <p><strong>Romaji:</strong><br /> momochidori
               <br />saezuru haru wa<br />momo goto ni<br />aratamaredomo<br />ware zo furiyuku</p>
           </div>
           <button class="expand"><span>More</span></button>
@@ -142,9 +151,251 @@
           </div>
           <div class="more-content">
             <p><em>Anonymous</em></p>
-            <p><strong>Original romaji:</strong><br /> yado chikaku<br />ume no hana ueji<br />ajikinaku<br />natsu hito no ka ni<br />ayamatarekeri</p>
+            <p><strong>Romaji:</strong><br /> yado chikaku<br />ume no hana ueji<br />ajikinaku<br />natsu hito no ka ni<br />ayamatarekeri</p>
           </div>
           <button class="expand"><span>More</span></button>
+        </div>
+      </li>
+      <li class="spring cherry parting">
+        <div class="card">
+          <div class="main-content">
+            <p>after the petals<br />in my gardern have fallen<br />how I shall miss those<br />who came to visit only<br />to view the cherry blossoms</p>
+          </div>
+          <div class="more-content">
+            <p><em>Oshikochi no Mitsune</em></p>
+            <p><strong>Romaji:</strong><br />waga yado no<br />hanami gatera ni<br />kuru hito wa<br />chirinan nochi zo<br />koishikaru beki</p>
+            <p><strong>Notes:</strong><br />
+            Sent to one who came to view the cherry blossoms.</p>
+          </div>
+          <button class="expand"><span>More</span></button>
+        </div>
+      </li>
+      <li class="spring cherry cicada melancholy like-cicada-shell">
+        <div class="card">
+          <div class="main-content">
+            <p>like the world, hollow<br />as a cicada's castoff shell--<br />oh cherry blossoms--<br />you too will fade away just<br />as we catch sight of your beauty</p>
+          </div>
+          <div class="more-content">
+            <p><em>Anonymous</em></p>
+            <p><strong>Romaji:</strong><br />utsusemi no<br />yo ni mo nitaru ka<br />hanazakura<br />saku to mishi ma ni<br />katsu chirinikiri</p>
+          </div>
+          <button class="expand"><span>More</span></button>
+        </div>
+      </li>
+      <li class="summer nightingale love longing">
+        <div class="card">
+          <div class="main-content">
+            <p>oh sweet nightingale<br />your first songs of the season<br />unleashed unbidden<br />a love without an object, a<br />love without the hope of joy</p>
+          </div>
+          <div class="more-content">
+            <p><em>Sosei</em></p>
+            <p><strong>Romaji:</strong><br />hototogisu<br />hatsukoe kikeba<br />ajikinakku<br />nushi sadamaranu<br />koe seraru hata</p>
+            <p><strong>Notes:</strong><br />
+            Hearing the first song of the nightingale.</p>
+          </div>
+          <button class="expand"><span>More</span></button>
+        </div>
+      </li>
+      <li class="summer nightingale love longing">
+        <div class="card">
+          <div class="main-content">
+            <p>oh small nightingale<br />from village to village you<br />sing your way, never<br />lighting long, ever keeping<br />distant from the one who loves you</p>
+          </div>
+          <div class="more-content">
+            <p><em>Anonymous</em></p>
+            <p><strong>Romaji:</strong><br />hototogisu<br />na ga naku sato no<br />amata areba<br />nao utomarenu<br />omou mono kara</p>
+            <p><strong>Notes:</strong><br />
+            This poem is included in <em>The Tales of Ise</em>where it is sent with a picture of a nightingale by aman to a woman he is courting</p>
+          </div>
+          <button class="expand"><span>More</span></button>
+        </div>
+      </li>
+      <li class="summer nightingale rain grief">
+        <div class="card">
+          <div class="main-content">
+            <p>as I sit brooding<br />in the midsummer rains, a<br />nightingale's cry<br />pierces the deepinging night--<br />where can he be going</p>
+          </div>
+          <div class="more-content">
+            <p><em>Ki no Tomonori</em></p>
+            <p><strong>Romaji:</strong><br />samidare ni<br />mono omoi oreba<br />hototogisu<br />yobukaku nakite<br />izuchi yuku ran</p>
+            <p><strong>Notes:</strong><br />
+            From the poetry contest held at the residence of the Consort in the Kanpyo era.</p>
+          </div>
+          <button class="expand"><span>More</span></button>
+        </div>
+      </li>
+      <li class="autumn mount-tokiwa">
+        <div class="card">
+          <div class="main-content">
+            <p>no autumn colors<br />appear on Mount Tokiwa<br />its green is constant--<br />it is the sound of the wind<br />that carries fall to my ears</p>
+          </div>
+          <div class="more-content">
+            <p><em>Ki no Yoshimochi</em></p>
+            <p><strong>Romaji:</strong><br />momijisenu<br />tokiwa no yama wa<br />fuku kaze no<br />oto ni ya aki o<br />kikiwataruran</p>
+            <p><strong>Notes:</strong><br />
+            Composed for an autumn poetry contest.</p>
+          </div>
+          <button class="expand"><span>More</span></button>
+        </div>
+      </li>
+      <li class="autumn mighty melancholy">
+        <div class="card">
+          <div class="main-content">
+            <p>oh awesome sacred<br />mountain, I will not lose my<br />heart to your brightly<br />colored leaves, for the loveliest<br />things are doomed to fade and fall</p>
+          </div>
+          <div class="more-content">
+            <p><em>Anonymous</em></p>
+            <p><strong>Romaji:</strong><br />chihayaburu<br />kannabi yama no<br />momijiba ni<br />omoi wa kakeji<br />utsurou mono o</p>
+          </div>
+          <button class="expand"><span>More</span></button>
+        </div>
+      </li>
+      <li class="autumn mighty arrowroot">
+        <div class="card">
+          <div class="main-content">
+            <p>even the arrowroot<br />climbing the sacred fences<br />of the awesome gods<br />cannot hold back autumn, it<br />too has donned its bright array</p>
+          </div>
+          <div class="more-content">
+            <p><em>Ki no Tsurayuki</em></p>
+            <p><strong>Romaji:</strong><br />chihayaburu<br />kami no igaki ni<br />hau kuzu mo<br />aki ni wa aezu<br />utsuroinikeri</p>
+            <p><strong>Notes:</strong><br />
+            Composed on seeing autumn leaves inside the fence of a shrine as he passsed by.</p>
+          </div>
+          <button class="expand"><span>More</span></button>
+        </div>
+      </li>
+      <li class="autumn chrysanthemum">
+        <div class="card">
+          <div class="main-content">
+            <p>if you want to pluck<br />one, go ahead and try, white<br />blossoms of autumn<br />chrysanthmums camouflaged<br />by the first coating of frost</p>
+          </div>
+          <div class="more-content">
+            <p><em>Oshikochi no Mitsune</em></p>
+            <p><strong>Romaji:</strong><br />kokoro ate ni<br />oraba ya oran<br />natsu shimo no<br />okimadowaseru<br />shiragiku no hana</p>
+            <p><strong>Notes:</strong><br />
+            On white chrysanthemums.</p>
+          </div>
+          <button class="expand"><span>More</span></button>
+        </div>
+      </li>
+      <li class="autumn chrysanthemum aging">
+        <div class="card">
+          <div class="main-content">
+            <p>they have a time of<br />glory other than fall's<br />peak, chrysanthemums<br />charm us again as they wilt--<br />for then their colors deepen</p>
+          </div>
+          <div class="more-content">
+            <p><em>Taira no Sadafun</em></p>
+            <p><strong>Romaji:</strong><br />aki okite<br />toki koso arikere<br />kiku no hana<br />utsurou kara ni<br />iro no masareba</p>
+            <p><strong>Notes:</strong><br />
+            Ordered to compose a poem to present with flowers to the former tenno at Ninnaji Temple.</p>
+          </div>
+          <button class="expand"><span>More</span></button>
+        </div>
+      </li>
+      <li class="winter longing snow">
+        <div class="card">
+          <div class="main-content">
+            <p>at my lonely home<br />snow falls and lies so thickly<br />that the path is gone<br />for there is no visitor<br />to tread his way to my door</p>
+          </div>
+          <div class="more-content">
+            <p><em>Anonymous</em></p>
+            <p><strong>Romaji:</strong><br />waga yado wa<br />yuki furishikite<br />michi mo nashi<br />fumiwakete tou<br />hito shi nakereba</p>
+          </div>
+          <button class="expand"><span>More</span></button>
+        </div>
+      </li>
+      <li class="winter snow">
+        <div class="card">
+          <div class="main-content">
+            <p>when buried in this<br />layer of snow that unites<br />all the white landscape<br />even the barren crags and rocks<br />seem to put forth blossoms</p>
+          </div>
+          <div class="more-content">
+            <p><em>Ki no Akimine</em></p>
+            <p><strong>Romaji:</strong><br />shirayuki no<br />tokoro mo wakazu<br />furishikeba<br />iwao ni mo saku<br />hana to koso mire</p>
+            <p><strong>Notes:</strong><br />
+            Composed on Shiga Pass.</p>
+          </div>
+          <button class="expand"><span>More</span></button>
+        </div>
+      </li>
+      <li class="winter snow longing mount-yoshino">
+        <div class="card">
+          <div class="main-content">
+            <p>the one who trod this<br />path through the untouched snows of<br />fair Mount Yoshino<br />sent not a word of greeting<br />before leaving in silence</p>
+          </div>
+          <div class="more-content">
+            <p><em>Mibu no Tadamine</em></p>
+            <p><strong>Romaji:</strong><br />miyoshino no<br />yama no shirayuki<br />fumiwakete<br />irinishi hito no<br />otozure mo senu</p>
+            <p><strong>Notes:</strong><br />
+            From the poetry contest held at the residence of the Consort in the Kanpyo era.</p>
+          </div>
+          <div class="expand"><span>More</span></div>
+        </div>
+      </li>
+      <li class="spring cherry felicitation">
+        <div class="card">
+          <div class="main-content">
+            <p>oh cherry blossoms<br />flutter down and cloud the path<br />where age, it is said,<br />approaches, deceive him with<br />tumbling curtains of petals</p>
+          </div>
+          <div class="more-content">
+            <p><em>Ariwara no Narihira</em></p>
+            <p><strong>Romaji:</strong><br />sakurabana<br />chirikai kumore<br />oiraku no<br />komu to iu naru<br />michi magau gani</p>
+            <p><strong>Notes:</strong><br />
+            Written at a congratulatory banquet at the Kujo residence on the occasion of the fortieth birthday of the Horikawa Chancellor.</p>
+          </div>
+          <div class="expand"><span>More</span></div>
+        </div>
+      </li>
+      <li class="parting">
+        <div class="card">
+          <div class="main-content">
+            <p>though I am going<br />to a place more distant than<br />your heavenly home<br />never shall I let my heart<br />outdistance your memory</p>
+          </div>
+          <div class="more-content">
+            <p><em>Anonymous</em></p>
+            <p><strong>Romaji:</strong><br />kagiri naki<br />kumoi no yoso ni<br />wakaru to mo<br />hito o kokoro ni<br />okurasamu ya wa</p>
+          </div>
+          <div class="expand"><span>More</span></div>
+        </div>
+      </li>
+      <li class="parting osaka">
+        <div class="card">
+          <div class="main-content">
+            <p>oh barrier of<br />Osaka, if restraint<br />indeed you are, hold<br />back that one who wishes to<br />leave before farewells are done</p>
+          </div>
+          <div class="more-content">
+            <p><em>Naniwa no Yorozuo</em></p>
+            <p><strong>Romaji:</strong><br />osaka no<br />seki shi masashiki<br />mono naraba<br />akazu wakaruru<br />kimi o todomeyo</p>
+            <p><strong>Notes:</strong><br />
+            Composed while parting from someone at Osaka.</p>
+          </div>
+          <div class="expand"><span>More</span></div>
+        </div>
+      </li>
+      <li class="parting cherry">
+        <div class="card">
+          <div class="main-content">
+            <p>he is determined<br />to go but I will hold him--<br />oh cherry blossoms<br />scatter and erase the path<br />that would lead him away from me</p>
+          </div>
+          <div class="more-content">
+            <p><em>Anonymous</em></p>
+            <p><strong>Romaji:</strong><br />shiite yuku<br />hito o todomen<br />sakurabana<br />izure o michi to<br />madou made chire</p>
+          </div>
+          <div class="expand"><span>More</span></div>
+        </div>
+      </li>
+      <li class="travel winter">
+        <div class="card">
+          <div class="main-content">
+            <p>so many times on<br />freezing nights my head rested<br />on pillows of grass--<br />fitful in the dark I would<br />brush away winer's first frosts</p>
+          </div>
+          <div class="more-content">
+            <p><em>Oshikochi no Mitsune</em></p>
+            <p><strong>Romaji:</strong><br />yo o samumi<br />oku hatsushimo o<br />haraitsutsu<br />kusa no makura ni<br />amata tabi nenu</p>
+            <p><strong>Notes:</strong><br />
+            Composed on the road when he was traveling in Kai Province.</p>
+          </div>
+          <div class="expand"><span>More</span></div>
         </div>
       </li>
     </ul>

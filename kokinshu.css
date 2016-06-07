@@ -13,6 +13,7 @@ body {
   width: 100%;
   top: 0;
   background: #285728;
+  max-width:1500px;
 }
 
 h1 {
@@ -21,7 +22,7 @@ h1 {
   font-weight: 400;
 }
 
-/* responsive grid from http://www.responsivegridsystem.com/ */
+/* -----------------responsive grid------------------- */
 .section {
 	clear: both;
 	padding: 0px;
@@ -69,6 +70,10 @@ label {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   display:block;
   padding-bottom: .2rem;
+}
+
+#filter-count{
+  display: block;
 }
 
 #search-toggle {
